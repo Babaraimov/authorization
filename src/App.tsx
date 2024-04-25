@@ -1,8 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Main from "./components/pages/products/main/main";
-import AuthoUser from "./components/authorization/authoUser";
+import AuthoUser from "./components/pages/authorization/authoUser";
 import AddProduct from "./components/pages/products/addProduct/addProduct";
-import EditProduct from "./components/pages/products/editPtoduct'/editProduct";
+import EditProduct from "./components/pages/products/editPtoduct/editProduct";
 import DeleteProduct from "./components/pages/products/deleteProduct/deleteProduct";
 
 function App() {
