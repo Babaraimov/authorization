@@ -1,21 +1,25 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 import { getDatabase } from "firebase/database";
 
-function FirebaseInit() {
+function FireBaseInit() {
   const firebaseConfig = {
-    apiKey: "AIzaSyAyHOCFWom5KMfvXKPhxdtnJIn7TTXkBPA",
-    authDomain: "shop-819c6.firebaseapp.com",
-    databaseURL:
-      "https://shop-819c6-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "shop-819c6",
-    storageBucket: "shop-819c6.appspot.com",
-    messagingSenderId: "69101945345",
-    appId: "1:69101945345:web:33640899193376b1523600",
-    measurementId: "G-WL7FJRKF66",
+    apiKey: "AIzaSyCjQ65scY89Azzc-5SI_RLbspQjQmvICE8",
+    authDomain: "shop1-28967.firebaseapp.com",
+    projectId: "shop1-28967",
+    storageBucket: "shop1-28967.appspot.com",
+    messagingSenderId: "1058241603915",
+    appId: "1:1058241603915:web:ea359823ea5a71d26160ce",
+    measurementId: "G-G6DNRWBE7J",
   };
-
   const app = initializeApp(firebaseConfig);
-  const dataBase = getDatabase(app);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const storage = getStorage(app);
+  const database = getDatabase(app);
+  return { auth, db, storage, database };
 }
 
-export default FirebaseInit;
+export default FireBaseInit;

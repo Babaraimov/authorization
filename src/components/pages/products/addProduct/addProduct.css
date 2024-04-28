@@ -1,0 +1,11 @@
+input{
+    width: 50%;
+    height: 40px;
+    color: rgb(26, 21, 21);
+    outline: none;
+    border: 1px solid #000;
+}
+h1{
+    font-size: 34px;
+    color: rgb(104, 68, 68);
+}
